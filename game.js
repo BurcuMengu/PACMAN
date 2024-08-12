@@ -76,6 +76,36 @@ let drawWals = () => {
                         wallInnerColor
                     );
                 }
+
+                if (j < map[0].lenght - 1 && map[i][j + 1] == 1) {
+                    createRect(
+                        j * oneBlockSize + wallOffset,
+                        i * oneBlockSize + wallOffset,
+                        wallSpaceWidth + wallOffset,
+                        wallSpaceWidth,
+                        wallInnerColor
+                    );
+                }
+
+                if (i < map.length - 1 && map[i + 1][j] == 1) {
+                    createRect(
+                        j * oneBlockSize + wallOffset,
+                        i * oneBlockSize + wallOffset,
+                        wallSpaceWidth,
+                        wallSpaceWidth + wallOssset,
+                        wallInnerColor
+                    );
+                }
+
+                if (i > 0 && map[i - 1][j] == 1) {
+                    createRect(
+                        j * oneBlockSize + wallOffset,
+                        i * oneBlockSize,
+                        wallSpaceWidth,
+                        wallSpaceWidth + wallOffset,
+                        wallInnerColor
+                    );
+                }
             }
         }
     }
