@@ -11,6 +11,10 @@ let createRect = (x, y, width, height, color) => {
 
 
 let fps = 30;
+let oneBlockSize = 20;
+let wallSpaceWidth = oneBlockSize / 1.6;
+let wallOffset = (oneBlockSize - wallSpaceWidth) / 2;
+let wallInnerColor = "black";
 
 
 let map = [
