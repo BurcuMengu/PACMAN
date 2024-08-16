@@ -66,7 +66,7 @@ let drawWals = () => {
             if (map[i][j] == 1) {
                 createRect(
                     j * oneBlockSize,
-                    i * oenBlockSize,
+                    i * oneBlockSize,
                     oneBlockSize,
                     oneBlockSize,
                     "#342DCA"
